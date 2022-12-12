@@ -1,0 +1,14 @@
+.myaside {
+    z-index: 3;
+    width: 10%;
+    height: 100vh;
+
+
+}
+
+.mymain {
+    width: calc(100% - 8%);
+   left: 100px;
+   z-index: 3;
+
+}
