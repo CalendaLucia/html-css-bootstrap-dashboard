@@ -1,7 +1,29 @@
+:root {
+    --mycolor:#e5e5e5;
+    --mywhite: #ffffff;
+    --myorange:#ff8f00;
+    --mysidebar:#051e34;
+  }
+
+.mycolor {
+    background-color:var(--mycolor);
+}
+
+.myorange {
+    color: var(--myorange);
+}
+
+.mytext {
+    font-size: 12px;
+}
+
+
+
 .myaside {
     z-index: 3;
     width: 10%;
     height: 100vh;
+    background-color: var(--mysidebar);
 
 
 }
