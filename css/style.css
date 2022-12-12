@@ -1,8 +1,9 @@
 :root {
-    --mycolor:#e5e5e5;
+    --mycolor:rgb(230, 230, 230);
     --mywhite: #ffffff;
     --myorange:#ff8f00;
     --mysidebar:#051e34;
+    --myprimary:#165bba;
   }
 
 .mycolor {
@@ -13,8 +14,16 @@
     color: var(--myorange);
 }
 
+.myprimary {
+    background-color: var(--myprimary);
+}
+
 .mytext {
     font-size: 12px;
+}
+
+.myhover:hover {
+    background-color:rgb(230, 230, 230, 0.3);
 }
 
 
@@ -24,9 +33,9 @@
     width: 10%;
     height: 100vh;
     background-color: var(--mysidebar);
-
-
 }
+
+
 
 .mymain {
     width: calc(100% - 8%);
