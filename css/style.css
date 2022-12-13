@@ -1,6 +1,6 @@
 :root {
     --mycolor:rgb(230, 230, 230);
-    --mywhite: #ffffff;
+    --mygray:#f7f7f7;
     --myorange:#ff8f00;
     --mysidebar:#051e34;
     --myprimary:#165bba;
@@ -8,6 +8,10 @@
 
 .mycolor {
     background-color:var(--mycolor);
+}
+
+.mygray {
+    background-color: var(--mygray);
 }
 
 .myorange {
@@ -29,16 +33,31 @@
 
 
 .mymain {
-    width: calc((100% - 10%) + 70px);
-    left: 100px;
+   width: calc((100% - 10%) + 23px );
+     
+}
+
+.mymain section {
+    overflow: auto;
 }
 
 .myaside {
-   z-index: 1;
+    z-index: 1;
     width: 10%;
     height: 100vh;
+    background-image: url("/img/sidebar-bg.png");
     background-color: var(--mysidebar);
 }
+
+.mywidth {
+    width: 20px;
+    
+}
+
+.mysize {
+    font-size: 12px;
+}
+
 
 
 
