@@ -28,8 +28,13 @@
 
 
 
+.mymain {
+    width: calc((100% - 10%) + 70px);
+    left: 100px;
+}
+
 .myaside {
-    z-index: 3;
+   z-index: 1;
     width: 10%;
     height: 100vh;
     background-color: var(--mysidebar);
@@ -37,9 +42,3 @@
 
 
 
-.mymain {
-    width: calc(100% - 8%);
-   left: 100px;
-   z-index: 3;
-
-}
