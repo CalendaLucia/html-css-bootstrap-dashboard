@@ -11,26 +11,25 @@
 </head>
 <body>
 
-    <header>
-        <div class="container-fluid bg-light myheader  fixed-top  top-0">
-            <div class="row ">
-              <nav class="navbar mynavbar bg-white">
-                <div class="col-lg-1  col-md-1 col-2 ">
-                    <div class="container-fluid d-md-flex  align-items-md-end">
+        <div class="container-fluid bg-light myheader fixed-top top-0">
+          <header>
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-2">
+                  <nav class="navbar mynavbar bg-white d-flex align-items-center">
                       <a class="navbar-brand" href="#">
                         <img class="d-none d-md-none d-lg-block" src="img/logo.svg" alt="Logo" width="100"  class="d-inline-block align-text-top">
                         <img class="d-lg-none d-md-block" src="img/mobile-logo.png" alt="Logo" width="40"  class="d-inline-block align-text-top">
                       </a>
-                    </div>
-                </div>
+                 
+                 </div>
 
-                <div class="col-lg-9 ps-lg-5 col-md-10 ps-md-3 col-8">
+                <div class="col-lg-7 ps-lg-5 col-md-10 ps-md-3 col-8">
                 <form class="d-flex" role="search">
                     <input class="form-control me-2 mycolor" type="search" placeholder="&#128269;   Prova a cercare Lezioni di Laravel" aria-label="Search">
                 </form>
                 </div>
 
-                <div class="col-lg-2 col-md-1 col-1 me-4 d-flex justify-content-lg-around align-items-lg-center ">
+                <div class="col-lg-3 col-md-1 col-1 me-4 d-flex justify-content-lg-around align-items-lg-center ">
                     <i class="fa-solid fa-list d-md-none d-none d-lg-block"></i>
                     <i class="fa-solid fa-circle-question d-lg-block  d-none d-md-none"></i>
                     <i class="fa-solid fa-ellipsis-vertical d-md-none  d-none d-lg-block"></i>
@@ -45,14 +44,17 @@
                           <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                       </div>
+                    </nav>
                 </div>
-              </nav>
+            
             </div>
+          </header>
         </div>
-    </header>
+  
 
-    <main class="mymain offset-1">
+  
         <section id="add-student ">
+          <main class="mymain offset-1">
               <div class="row  g-4 myprimary  p-3 pt-4">
                 <div class="col-7 lh-1 col-md-6 order-1 ">
                   <p class="text-white fs-2 d-inline-block ">Boolean</p>
@@ -365,14 +367,16 @@
                 </div>
                </div>
             </div>
-          </div>  
+
+          </div> 
+        </main>  
         </section>   
 
             
       
 
             
-    </main> 
+ 
 
     <aside>
         <div class="row fixed-top top-0 myaside ">
@@ -394,6 +398,7 @@
                     </li>
                   </ul>
             </div>
+            
             <div class="col align-self-end pb-4 text-center">
               <i class="fa-solid fa-gear text-white pe-lg-3 ps-2"></i>
               <a class="text-decoration-none mytext text-white" href="#">
