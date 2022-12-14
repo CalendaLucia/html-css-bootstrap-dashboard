@@ -1,9 +1,9 @@
 :root {
     --mycolor:rgb(230, 230, 230);
-    --mygray:#f7f7f7;
+    --mygray:rgb(231, 231, 231);
     --myorange:#ff8f00;
     --mysidebar:#051e34;
-    --myprimary:#165bba;
+    --myprimary:#4991f7;
   }
 
 .mycolor {
@@ -18,6 +18,11 @@
     color: var(--myorange);
 }
 
+.myoffcanvas {
+    width: 50vw!important;
+    
+}
+
 .myprimary {
     background-color: var(--myprimary);
 }
@@ -30,16 +35,23 @@
     background-color:rgb(230, 230, 230, 0.3);
 }
 
-
+.myheader {
+    height: 10vh !important;
+}
 
 .mymain {
-   width: calc((100% - 10%) + 23px );
-     
+   width: calc(100% - 10%);
+   height: calc(100vh - 10vh);
+   margin-top: 50px;
+   margin-left: 55px;
+   
 }
+
 
 .mymain section {
     overflow: auto;
 }
+
 
 .myaside {
     z-index: 1;
@@ -54,8 +66,50 @@
     
 }
 
+
+
 .mysize {
     font-size: 12px;
+}
+
+
+@media screen and (min-width:400px)  {
+    
+    .myaside {
+  
+        width:15%;
+        height: 100vh;
+        
+    }
+    
+}
+
+
+
+@media screen and (min-width:600px)  {
+    
+    .mymargin {
+        margin-top:80px !important;
+    }
+
+    .myoffcanvas {
+        width: 60% !important;       
+    }
+    
+}
+
+@media screen and (min-width:1000px)  {
+    
+    .mymargin {
+        margin-top:50px !important;
+      
+    }
+
+    .myoffcanvas {
+        width: 50vw!important;
+        
+    }
+    
 }
 
 
