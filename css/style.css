@@ -6,40 +6,62 @@
     --myprimary:#165bba;
   }
 
-.myheader {
-    width: 100%;
-    height: 60px;
-}
-
-.myaside {
-    width: calc((100% / 12) * 2.5); 
-    height: 100vh;
-    margin-left: -25px;
-    z-index: 3;
-  
-}
-
-.mymain {
-    width: calc((100% / 12) * 12); 
-  
-}
-
-.mycontent {
-    width: calc((100% / 12) * 11); 
-    margin-left: 36px;
-  
-}
-
 .myorange {
     color: var(--myorange);
 }
-
-.my-primary {
-    background-color: #165bba;
+  
+#container-totale {
+    height: 100vh;    
 }
 
-.mygray {
-    background-color: var(--mygray);
+.jt-search {
+    display: block;
+    border-top-left-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+    padding: 0.3rem 0.7rem;
+    line-height: 1.5;
+    border: 0.5px solid #ced4da;
+}
+
+.jt-navsearch {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.row .col-1 {
+    background-image: url("/img/sidebar-bg.png");
+    background-color: var(--mysidebar);
+    
+}
+
+header {
+    height: 80px;
+    padding-top: 0.5rem;
+    z-index: 999;
+}
+main {
+    height: calc(100vh - 80px);
+}
+
+#container-totale > main > div > div > div.col-1.text-white.d-flex.flex-column.justify-content-between.p-0 {
+    height: calc(100vh - 80px);
+    z-index: 1;
+}
+
+.jt-avatar {
+    max-width: 25px;
+}
+
+#container-totale > main > div > div > div.col-11.d-flex.mx-0.flex-wrap {
+overflow-y: auto;
+height: 100%;
+}
+
+#container-totale > header > nav > div > a.navbar-brand.d-inline.d-lg-none > img {
+    width: 30px;
+}
+#container-totale > main > div > div > div a:hover {
+    transform:scale(1.1)
 }
 
 .mywidth {
@@ -47,104 +69,14 @@
     
 }
 
-.myoffcanvas {
-    width: 50vw!important;
-    
-}
-
-.myhover:hover {
-    background-color:rgb(230, 230, 230, 0.3);
-}
-
-
-
-/* .mycontent {
-   width: 20%;
-   height: 100vh;
-} */
-
-/* .mycolor {
-    background-color:var(--mycolor);
-}
 
 
 
 
-.myprimary {
-    background-color: var(--myprimary);
-}
+@media only screen and  (max-width: 990px) {
+	#container-totale > header > nav > div {
+        flex-wrap: unset;
 
-.mytext {
-    font-size: 12px;
-}
-
-
-
-.myheader {
-    height: 10vh !important;
-}
-
-.mymain {
-   width: calc(100% - 10%);
-   height: calc(100vh - 10vh);
-   margin-top: 50px;
-   margin-left: 55px;
-   
-}
-
-
-.mymain section {
-    overflow: auto;
-}
-
-
-.myaside {
-    z-index: 1;
-    width: 10%;
-    height: 100vh;
-    background-image: url("/img/sidebar-bg.png");
-    background-color: var(--mysidebar);
-}
-
-
-
-
-
-.mysize {
-    font-size: 12px;
-}
-
-
-@media screen and (min-width:400px)  {
-    
-    .myaside {
-  
-        width:15%;
-        height: 100vh;
-        
-    }
-    
-}
-
-
-
-@media screen and (min-width:600px)  {
-    
-    .mymargin {
-        margin-top:80px !important;
-    }
-
-    .myoffcanvas {
-        width: 60% !important;       
-    }
-    
-}
-
-@media screen and (min-width:1000px)  {
-    
-    .mymargin {
-        margin-top:50px !important;
-      
     }
 
     .myoffcanvas {
@@ -156,4 +88,8 @@
 
 
 
- */
+
+
+
+
+

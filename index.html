@@ -10,407 +10,487 @@
     <title>Bootstrap Dashboard</title>
 </head>
 <body>
+  
 
-        <div class="container-fluid bg-light myheader fixed-top top-0">
-          <header>
-            <div class="row">
-                <div class="col-lg-1 col-md-1 col-2">
-                  <nav class="navbar mynavbar bg-white d-flex align-items-center">
-                      <a class="navbar-brand" href="#">
-                        <img class="d-none d-md-none d-lg-block" src="img/logo.svg" alt="Logo" width="100"  class="d-inline-block align-text-top">
-                        <img class="d-lg-none d-md-block" src="img/mobile-logo.png" alt="Logo" width="40"  class="d-inline-block align-text-top">
-                      </a>
-                 
-                 </div>
 
-                <div class="col-lg-7 ps-lg-5 col-md-10 ps-md-3 col-8">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2 mycolor" type="search" placeholder="&#128269;   Prova a cercare Lezioni di Laravel" aria-label="Search">
-                </form>
-                </div>
 
-                <div class="col-lg-3 col-md-1 col-1 me-4 d-flex justify-content-lg-around align-items-lg-center ">
-                    <i class="fa-solid fa-list d-md-none d-none d-lg-block"></i>
-                    <i class="fa-solid fa-circle-question d-lg-block  d-none d-md-none"></i>
-                    <i class="fa-solid fa-ellipsis-vertical d-md-none  d-none d-lg-block"></i>
-                    
-                      <div class="dropdown dropstart">
-                        <button class="btn dropdown border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-bell myorange"></i>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </div>
-                    </nav>
-                </div>
-            
-            </div>
-          </header>
+  <div id="container-totale">
+
+    <!-- Header -->
+    <header class="bg-light">
+      <nav class="navbar navbar-expand-lg w-100 bg-white">
+        <div class="container-fluid d-flex">
+
+          <a class="navbar-brand d-none d-lg-inline" href="#"><img src="img/logo.svg" alt="logo Boolean" /></a>
+          <a class="navbar-brand d-inline d-lg-none" href="#"><img class="jt-logo" src="img/mobile-logo.png"
+              alt="logo Boolean" /></a>
+          <form class="d-flex w-100" role="search">
+            <i class="jt-search bg-secondary bg-opacity-25 m-0 fa-solid fa-magnifying-glass"></i>
+
+            <input class="form-control jt-navsearch bg-secondary bg-opacity-25" type="search"
+              placeholder="Prova a cercare Lezioni di Laravel "
+              aria-label="Search" />
+          </form>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-list-ul"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn border-light " data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link px-2" href=""><i class="jt-bell fa-solid fa-bell myorange"></i></a>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><button class="dropdown-item" type="button">Action</button></li>
+              <li><button class="dropdown-item" type="button">Another action</button></li>
+              <li><button class="dropdown-item" type="button">Something else here</button></li>
+            </ul>
+          </div>
+          
         </div>
-  
+      </nav>
+    </header>
+    <!-- /Header -->
 
-  
-        <section id="add-student ">
-          <main class="mymain offset-1">
-              <div class="row  g-4 myprimary  p-3 pt-4">
-                <div class="col-7 lh-1 col-md-6 order-1 ">
-                  <p class="text-white fs-2 d-inline-block ">Boolean</p>
-                  <span class="badge rounded-pill bg-primary  px-2 py-md-2 px-md-2 ">Piano blaze</span>
-                  <span class="badge rounded-pill bg-primary  px-2 py-md-2 px-md-2">3 app</span>
-                  <span class="badge rounded-pill bg-primary  px-2 py-md-2 d-none d-md-none px-md-2 ">Boolean mobile app</span>
-                  <span class="badge rounded-pill bg-primary  px-2 py-md-2 d-none d-md-none px-md-2 ">Boolean web app</span>
-                  <span class="badge rounded-pill bg-primary  px-2 py-md-2 d-none d-md-none px-md-2">Boolean blog app</span>
-                  <i class="fa-solid fa-arrow-right text-white"></i>
-                  <span class="badge rounded-pill bg-primary  px-2 py-md-2"> <i class="fa-solid fa-add"></i> </span>
-                </div>
 
-                <div class="col-md-6 order-1">
-                  <p class="text-white ">Studenti negli ultimi 30 minuti</p>
-                  <p class="text-white fs-3">125</p>
+    <!-- main -->
 
-                </div>
-                <div class="col-12 order-0">
-                  <p class="text-white  d-inline-block ">Nuovo Studente</p>
-                  <button class="btn border ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-                   <i class="fa-solid fa-plus text-white"></i>
-                 </button>
-                </div>
-              </div>
+    <main>
+
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+
+          <!-- sidbar -->
+          <aside class="col-1 text-white d-flex flex-column justify-content-between align-items-center p-0">
+            <div class="pt-3 nav flex-column list-unstyled text-center justify-content-center p-0">
               
-              <!-- START OFFCANVAS -->
-
-              <div class="offcanvas offcanvas-end myoffcanvas" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title fs-6" id="staticBackdropLabel">Inserisci un nuovo studente</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body myinput">
-                  <form class="row g-3">
-                    <div class="col-md-6">
-                      <label for="fname" class="form-label">Nome</label>
-                      <input type="text" class="form-control" id="fname">
-                    </div>
-                    <div class="col-md-6">
-                      <label for="sname" class="form-label">Cognome</label>
-                      <input type="text" class="form-control" id="sname">
-                    </div>
-                  <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4">
-                  </div>
-                  <div class="col-12">
-                    <label for="inputAddress" class="form-label">Indirizzo</label>
-                    <input type="text" class="form-control" id="inputAddress">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="inputCity" class="form-label">Città</label>
-                    <input type="text" class="form-control" id="inputCity">
-                  </div>
-                  <div class="col-md-4">
-                    <label for="inputState" class="form-label">Stato</label>
-                    <select id="inputState" class="form-select">
-                      <option selected>Scegli...</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                  <div class="col-md-2">
-                    <label for="cap" class="form-label">Cap</label>
-                    <input type="text" class="form-control" id="cap">
-                  </div>
-                  <div class="col-12">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="gridCheck">
-                      <label class="form-check-label" for="gridCheck">
-                        Seleziona per proseguire
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Salva</button>
-                    <button type="button" class="btn btn-warning">Svuota</button>
-                  </div>
-                </form>
-                  </div>
-              </div>
-
-        </section>
-
-        <section id="content">
-          <div class="row  g-4   p-3 pt-4">
-            <div class="col-11  ">
-              <div class="border border-1 rounded-top mygray">
-                <p class="fs-4 pt-1 ps-3 ">Prossime classi</p>
-             </div>
-             
-            <table class="table table-sm mt-3 table-hover border border-1">
-             <thead>
-               <tr>
-                 <th scope="col" >Nome</th>
-                 <th scope="col" class="d-none">Data Inizio</th>
-                 <th scope="col" class="d-none">ROI</th>
-                 <th scope="col">Stato</th>
-                 <th scope="col">Azioni</th>
-               </tr>
-             </thead>
-             <tbody>
-               <tr>
-                 <td scope="row" class="mysize p-3">
-                    <img class="mywidth  rounded-circle "  src="img/class-avatar.jpg" alt="">
-                     Classe 75
-                 </td>
-                 <td class="d-none">15 Feb 2021</td>
-                 <td class="d-none">20%</td>
-                 <td>
-                  <button type="button" class="btn btn-success btn-sm rounded">done</button>
-                 </td>
-                 <td>
-                   <i class="fa-solid fa-pencil border border-2 border-dark p-2 rounded"></i> 
-                   <i class="fa-solid fa-trash-can border border-2 border-dark p-2 rounded"></i>
-                 </td>
-              
-               </tr>
-               <tr>
-                 <td scope="row" class="mysize p-3">
-                   <img class="mywidth  rounded-circle "  src="img/class-avatar.jpg" alt="">
-                    Classe 76
-                </td>
-                 <td class="d-none">16 Feb 2021</td>
-                 <td class="d-none">20%</td>
-                 <td>
-                  <button type="button" class="btn btn-success btn-sm rounded">done</button>
-                </td>
-                 <td>
-                   <i class="fa-solid fa-pencil border border-2 border-dark p-2 rounded"></i> 
-                   <i class="fa-solid fa-trash-can border border-2 border-dark p-2 rounded"></i>
-                 </td>
-              
-               </tr>
-               <tr>
-                 <td scope="row" class="mysize p-3">
-                   <img class="mywidth  rounded-circle "  src="img/class-avatar.jpg" alt="">
-                    Classe 76
-                </td>
-                 <td  class="d-none">16 Feb 2021</td>
-                 <td class="d-none">20%</td>
-                 <td>
-                  <button type="button" class="btn btn-warning btn-sm rounded">process</button>
-                 </td>
-                 <td>
-                   <i class="fa-solid fa-pencil border border-2 border-dark p-2 rounded"></i> 
-                   <i class="fa-solid fa-trash-can border border-2 border-dark p-2 rounded"></i>
-                 </td>
-              
-               </tr>
-               <tr>
-                 <td scope="row" class="mysize p-3">
-                   <img class="mywidth  rounded-circle "  src="img/class-avatar.jpg" alt="">
-                    Classe 76
-                </td>
-                 <td  class="d-none">16 Feb 2021</td>
-                 <td class="d-none">20%</td>
-                 <td>
-                  <button type="button" class="btn btn-success rounded btn-sm">done</button>
-                 </td>
-                 <td>
-                   <i class="fa-solid fa-pencil border border-2 border-dark p-2 rounded"></i> 
-                   <i class="fa-solid fa-trash-can border border-2 border-dark p-2 rounded"></i>
-                 </td>
-              
-               </tr>
-               <tr>
-                 <td scope="row" class="mysize p-3">
-                   <img class="mywidth  rounded-circle "  src="img/class-avatar.jpg" alt="">
-                    Classe 76
-                </td>
-                 <td  class="d-none">16 Feb 2021</td>
-                 <td class="d-none">20%</td>
-                 <td>
-                  <button type="button" class="btn btn-sm btn-danger rounded btn-sm">faled</button>
-                 </td>
-                 <td>
-                   <i class="fa-solid fa-pencil border border-2 border-dark p-2 rounded"></i> 
-                   <i class="fa-solid fa-trash-can border border-2 border-dark p-2 rounded"></i>
-                 </td>
-              
-               </tr>
-               <tr>
-                 <td scope="row" class="mysize p-3">
-                   <img class="mywidth  rounded-circle "  src="img/class-avatar.jpg" alt="">
-                    Classe 76
-                </td>
-                 <td class="d-none">16 Feb 2021</td>
-                 <td class="d-none">20%</td>
-                 <td>
-                  <button type="button" class="btn btn-success rounded btn-sm">done</button>
-                 </td>
-                 <td>
-                   <i class="fa-solid fa-pencil border border-2 border-dark p-2 rounded"></i> 
-                   <i class="fa-solid fa-trash-can border border-2 border-dark p-2 rounded"></i>
-                 </td>
-              
-               </tr>
-               <tr>
-                 <td scope="row" class="mysize p-3">
-                   <img class="mywidth  rounded-circle "  src="img/class-avatar.jpg" alt="">
-                    Classe 76
-                </td>
-                 <td  class="d-none">16 Feb 2021</td>
-                 <td class="d-none">20%</td>
-                 <td>
-                  <button type="button" class="btn btn-success rounded btn-sm">done</button>
-                 </td>
-                 <td>
-                   <i class="fa-solid fa-pencil border border-2 border-dark p-2 rounded"></i> 
-                   <i class="fa-solid fa-trash-can border border-2 border-dark p-2 rounded"></i>
-                 </td>
-              
-               </tr>
-               <tr>
-                 <td scope="row" class="mysize p-3">
-                   <img class="mywidth  rounded-circle "  src="img/class-avatar.jpg" alt="">
-                    Classe 76
-                </td>
-                 <td class="d-none">16 Feb 2021</td>
-                 <td class="d-none">20%</td>
-                 <td>
-                  <button type="button" class="btn btn-success  btn-sm rounded">done</button>
-                 </td>
-                 <td>
-                   <i class="fa-solid fa-pencil border border-2 border-dark p-2 rounded"></i> 
-                   <i class="fa-solid fa-trash-can border border-2 border-dark p-2 rounded"></i>
-                 </td>
-               </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <!-- INIZIO FAQ -->
-            <div class="col-11">
-              <div class="border rounded-top mygray">
-                <p class="fs-4 pt-1 ps-3 ">F.A.Q.</p>
-             </div>
-             <div class="accordion accordion-flush border" id="accordionFlushExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Come aggiungere un nuovo studente?
-                  </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Come posso accedere alle informazioni del mio account?
-                  </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Posso usare questa dashboard da mobile?
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                </div>
-              </div>
-            </div>
-            </div>
-         
-  
-
-            <div class="col-11 ">
-              <div class="border rounded-top mygray">
-                <p class="fs-4 pt-1 ps-3 ">Todo</p>
-              </div>
-              <ul class="list-group list-group-flush border">
-                <li class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                  <label class="form-check-label" for="firstCheckbox">First checkbox</label>
-                </li>
-                <li class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                  <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
-                </li>
-                <li class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                  <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
-                </li>
-              </ul>
-            </div>
-
-
-            <div class="col-11">
-               <div class="border rounded ">
-                <div class="border rounded border-2 pb-5">
-                  <img src="img/stats.jpeg" class="  img-fluid  " alt="">
-                  <h6 class="ms-3">Utenti Attivi</h6>
-                  <p class="ms-3">Lista degli utenti attivi in piattaforma nell' ultimo mese </p>
-                
-                    <p class="border-top ms-3">Gennatio:1200</p>
-                    <p class="border-top  ms-3">Febbraio:800</p>
-                    <p class="border-top ms-3">Marzo:1500</p>
-                    <a href="#" class="border-top pt-2 ms-3 ">Visualizza report approfondito</a>
-                </div>
-               </div>
-            </div>
-
-          </div> 
-        </main>  
-        </section>   
-
-            
-      
-
-            
- 
-
-    <aside>
-        <div class="row fixed-top top-0 myaside ">
-            <div class="col pt-4 mymargin ">
-                <ul class="nav ms-lg-3 ms-1 mt-5">
-                    <li class="nav-item myhover text-light">
-                      <a class="nav-link text-white mytext " href="#"> <i class="fa-solid fa-house pe-1"></i></a>
-                      <span class="d-none">Home</span>
-                    </li>
-                    <li class="nav-item myhover">
-                      <a class="nav-link text-white mytext" href="#"> <i class="fa-solid fa-chart-simple pe-1"></i>
-                        <span class="d-none">Stats</span> 
-                      </a>
-                    </li>
-                    <li class="nav-item myhover">
-                      <a class="nav-link text-white mytext" href="#"><i class="fa-solid fa-signal pe-1"></i> 
-                        <span class="d-none">Signal</span> 
-                      </a>
-                    </li>
-                  </ul>
-            </div>
-            
-            <div class="col align-self-end pb-4 text-center">
-              <i class="fa-solid fa-gear text-white pe-lg-3 ps-2"></i>
-              <a class="text-decoration-none mytext text-white" href="#">
-                <span class="d-none">Admin</span> 
+              <a class="nav-link active text-white myhover" aria-current="page" href="#">
+                <i class="fa-solid fa-house fs-6 px-lg-2"></i>
+                <span class="d-none d-lg-inline fs-6">Home</span>
+              </a>
+              <a class="nav-link text-white myhover" href="#">
+                <i class="fa-solid fa-chart-simple px-lg-2 fs-5"></i>
+                <span class="d-none d-lg-inline fs-6">Stats</span>
+              </a>
+              <a class="nav-link text-white myhover" href="#">
+                <i class="fa-solid fa-signal px-lg-1 fs-6"></i>
+                <span class="d-none d-lg-inline fs-6">Signal</span>
               </a>
             </div>
+            <div class="aside-bottom text-center p-0 my-4">
+              <a class="nav-link myhover" href="#">
+                <i class="fa-solid fa-gear text-white pe-lg-1"></i>
+                <span class="d-none d-lg-inline fs-6">Admin</span>
+              </a>
+           
+            </div>
+        
+          </aside>
+          <!-- sidebar -->
+
+          
+
+
+          <!-- parte main -->
+          <div class="col-11 d-flex mx-0 flex-wrap">
+            
+            <div class="container-fluid px-0">
+              <div class="row">
+                <div class="container-fluid bg-primary m-0 text-white">
+                  <div class="row boolean  ">
+
+                    <div class="col-lg-4 p-3  ">
+                      <div class="boolean-top">
+                        <h3 class="d-inline-block p-1 ">Boolean</h3>
+                        <span class="badge jt-badge rounded-pill text-bg-dark bg-opacity-25">Piano blaze</span>
+                      </div>
+                      <span class="badge jt-badge text-bg-dark bg-opacity-25">3 app</span>
+                      <span class="badge jt-badge text-bg-dark bg-opacity-25 d-none d-lg-inline">Boolean mobile app</span>
+                      <span class="badge jt-badge text-bg-dark bg-opacity-25 d-none d-lg-inline">Boolean webapp</span>
+                      <span class="badge jt-badge text-bg-dark bg-opacity-25 d-none d-lg-inline">Boolean app</span>
+                      <span class="d-inline d-lg-none"><i class="fa-solid fa-angles-right"></i></span>
+                      <span class="badge jt-badge text-bg-dark bg-opacity-25 d-inline d-lg-none"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+
+                    <div class="col-lg-4 p-3 offset-lg-1 ">
+                      <p>Studenti negli ultimi 30 minuti</p>
+                      <h2>125</h2>
+                    </div>
+                    
+                    <div class="col-lg-2 p-3  ">
+                      <p class="text-white  d-inline-block ">Nuovo Studente</p>
+                      <button class="btn border ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                       <i class="fa-solid fa-plus text-white"></i>
+                      </button>
+                    </div>
+
+                     <!-- START OFFCANVAS -->
+
+                    <div class="offcanvas offcanvas-end myoffcanvas text-black" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title fs-6" id="staticBackdropLabel">Inserisci un nuovo studente</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body myinput">
+                           <form class="row g-3">
+                              <div class="col-md-6">
+                                 <label for="fname" class="form-label">Nome</label>
+                                 <input type="text" class="form-control" id="fname">
+                              </div>
+                              <div class="col-md-6">
+                                 <label for="sname" class="form-label">Cognome</label>
+                                 <input type="text" class="form-control" id="sname">
+                              </div>
+                              <div class="col-md-6">
+                                 <label for="inputEmail4" class="form-label">Email</label>
+                                 <input type="email" class="form-control" id="inputEmail4">
+                              </div>
+                              <div class="col-md-6">
+                                 <label for="inputPassword4" class="form-label">Password</label>
+                                 <input type="password" class="form-control" id="inputPassword4">
+                              </div>
+                              <div class="col-12">
+                                  <label for="inputAddress" class="form-label">Indirizzo</label>
+                                  <input type="text" class="form-control" id="inputAddress">
+                              </div>
+                              <div class="col-md-6">
+                                  <label for="inputCity" class="form-label">Città</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                              </div>
+                              <div class="col-md-4">
+                                   <label for="inputState" class="form-label">Stato</label>
+                                   <select id="inputState" class="form-select">
+                                   <option selected>Scegli...</option>
+                                   <option>...</option>
+                                   </select>
+                              </div>
+                              <div class="col-md-2">
+                                 <label for="cap" class="form-label">Cap</label>
+                                 <input type="text" class="form-control" id="cap">
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-check">
+                                     <input class="form-check-input" type="checkbox" id="gridCheck">
+                                     <label class="form-check-label" for="gridCheck">
+                                        Seleziona per proseguire
+                                     </label>
+                                  </div>
+                              </div>
+                              <div class="col-12">
+                                 <button type="submit" class="btn btn-primary">Salva</button>
+                                 <button type="button" class="btn btn-warning">Svuota</button>
+                             </div>
+                         </form>
+                      </div>
+                    </div>
+
+                      <!-- END OFFCANVAS -->
+                  </div>
+                </div>
+              </div>
+               
+                
+       
+              <div class="row">
+                <div class="col-lg-8 p-1">
+                  <!-- Prossime classi -->
+                  <div class="row m-1">
+                    <div class="card p-0 mb-4">
+                      <div class="card-header d-flex justify-content-between bg-secondary bg-opacity-10">
+                        <h3 class="card-title">Prossime classi</h3>
+                        <div class="jt-plus h2 text-primary d-flex align-items-center">
+                          <i class="bi bi-plus-square "></i>
+                        </div>
+                      </div>
+                      <div class="card-body">
+
+                       <!-- START TABLE -->
+                  <table class="table table-sm mt-3 table-hover table-responsive ">
+                    <thead>
+                      <tr>
+                        <th scope="col" >Nome</th>
+                        <th scope="col" class="d-none">Data Inizio</th>
+                        <th scope="col" class="d-none">ROI</th>
+                        <th scope="col">Stato</th>
+                        <th scope="col">Azioni</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row" class="mysize p-3">
+                           <img class="mywidth  rounded-circle "  src="img/class-avatar.jpg" alt="">
+                            Classe 75
+                        </td>
+                        <td class="d-none">15 Feb 2021</td>
+                        <td class="d-none">20%</td>
+                        <td>
+                         <button type="button" class="btn btn-success btn-sm rounded">done</button>
+                        </td>
+                        <td class="d-flex">
+                          <i class="fa-solid fa-pencil border border-2 border-dark p-2 rounded"></i> 
+                          <i class="fa-solid fa-trash-can border border-2 border-dark p-2 rounded"></i>
+                        </td>
+                     
+                      </tr>
+                      <tr>
+                        <td scope="row" class="mysize p-3">
+                          <img class="mywidth  rounded-circle "  src="img/class-avatar.jpg" alt="">
+                           Classe 76
+                       </td>
+                        <td class="d-none">16 Feb 2021</td>
+                        <td class="d-none">20%</td>
+                        <td>
+                         <button type="button" class="btn btn-success btn-sm rounded">done</button>
+                       </td>
+                       <td class="d-flex">
+                          <i class="fa-solid fa-pencil border border-2 border-dark p-2 rounded"></i> 
+                          <i class="fa-solid fa-trash-can border border-2 border-dark p-2 rounded"></i>
+                        </td>
+                     
+                      </tr>
+                      <tr>
+                        <td scope="row" class="mysize p-3">
+                          <img class="mywidth  rounded-circle "  src="img/class-avatar.jpg" alt="">
+                           Classe 76
+                       </td>
+                        <td  class="d-none">16 Feb 2021</td>
+                        <td class="d-none">20%</td>
+                        <td>
+                         <button type="button" class="btn btn-warning btn-sm rounded">process</button>
+                        </td>
+                        <td class="d-flex">
+                          <i class="fa-solid fa-pencil border border-2 border-dark p-2 rounded"></i> 
+                          <i class="fa-solid fa-trash-can border border-2 border-dark p-2 rounded"></i>
+                        </td>
+                     
+                      </tr>
+                      <tr>
+                        <td scope="row" class="mysize p-3">
+                          <img class="mywidth  rounded-circle "  src="img/class-avatar.jpg" alt="">
+                           Classe 76
+                       </td>
+                        <td  class="d-none">16 Feb 2021</td>
+                        <td class="d-none">20%</td>
+                        <td>
+                         <button type="button" class="btn btn-success rounded btn-sm">done</button>
+                        </td>
+                        <td class="d-flex">
+                          <i class="fa-solid fa-pencil border border-2 border-dark p-2 rounded"></i> 
+                          <i class="fa-solid fa-trash-can border border-2 border-dark p-2 rounded"></i>
+                        </td>
+                     
+                      </tr>
+                      <tr>
+                        <td scope="row" class="mysize p-3">
+                          <img class="mywidth  rounded-circle "  src="img/class-avatar.jpg" alt="">
+                           Classe 76
+                       </td>
+                        <td  class="d-none">16 Feb 2021</td>
+                        <td class="d-none">20%</td>
+                        <td>
+                         <button type="button" class="btn btn-sm btn-danger rounded btn-sm">faled</button>
+                        </td>
+                        <td class="d-flex">
+                          <i class="fa-solid fa-pencil border border-2 border-dark p-2 rounded"></i> 
+                          <i class="fa-solid fa-trash-can border border-2 border-dark p-2 rounded"></i>
+                        </td>
+                     
+                      </tr>
+                      <tr>
+                        <td scope="row" class="mysize p-3">
+                          <img class="mywidth  rounded-circle "  src="img/class-avatar.jpg" alt="">
+                           Classe 76
+                       </td>
+                        <td class="d-none">16 Feb 2021</td>
+                        <td class="d-none">20%</td>
+                        <td>
+                         <button type="button" class="btn btn-success rounded btn-sm">done</button>
+                        </td>
+                        <td class="d-flex">
+                          <i class="fa-solid fa-pencil border border-2 border-dark p-2 rounded"></i> 
+                          <i class="fa-solid fa-trash-can border border-2 border-dark p-2 rounded"></i>
+                        </td>
+                     
+                      </tr>
+                      <tr>
+                        <td scope="row" class="mysize p-3">
+                          <img class="mywidth  rounded-circle "  src="img/class-avatar.jpg" alt="">
+                           Classe 76
+                       </td>
+                        <td  class="d-none">16 Feb 2021</td>
+                        <td class="d-none">20%</td>
+                        <td>
+                         <button type="button" class="btn btn-success rounded btn-sm">done</button>
+                        </td>
+                        <td class="d-flex">
+                          <i class="fa-solid fa-pencil border border-2 border-dark p-2 rounded"></i> 
+                          <i class="fa-solid fa-trash-can border border-2 border-dark p-2 rounded"></i>
+                        </td>
+                     
+                      </tr>
+                      <tr>
+                        <td scope="row" class="mysize p-3">
+                          <img class="mywidth  rounded-circle "  src="img/class-avatar.jpg" alt="">
+                           Classe 76
+                       </td>
+                        <td class="d-none">16 Feb 2021</td>
+                        <td class="d-none">20%</td>
+                        <td>
+                         <button type="button" class="btn btn-success  btn-sm rounded">done</button>
+                        </td>
+                        <td class="d-flex">
+                          <i class="fa-solid fa-pencil border border-2 border-dark p-2 rounded"></i> 
+                          <i class="fa-solid fa-trash-can border border-2 border-dark p-2 rounded"></i>
+                        </td>
+                      </tr>
+                       </tbody>
+                    </table>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <!-- /Prossime classi -->
+    
+                  <!-- FAQ -->
+                  <div class="row m-1">
+                    <div class="card p-0 mb-4">
+                      <div class="card-header d-flex justify-content-between bg-secondary bg-opacity-10">
+                        <h3 class="card-title">F.A.Q</h3>
+                      </div>
+                      <div class="card-body">
+                        <div class="accordion accordion-flush " id="accordionFlushExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Come aggiungere un nuovo studente?
+                              </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Come posso accedere alle informazioni del mio account?
+                              </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Posso usare questa dashboard da mobile?
+                              </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /FAQ -->
+              
+                </div>
+                <div class="col-lg-4 mt-2">
+                  <div class="card">
+                    <div class="card-header">
+                      TODO
+                    </div>
+                    <ul class="list-group list-group-flush border">
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                        <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+                      </li>
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                        <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+                      </li>
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                        <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="card mt-3 ">
+                    <img class="card-img-top" src="img/stats.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                    
+                      <h6 class="ms-3">Utenti Attivi</h6>
+                      <p class="ms-3">Lista degli utenti attivi in piattaforma nell' ultimo mese </p>
+                      <ul class="list-unstyled p-3">
+                        <li class="pt-1">
+                          <p class=" border-top ms-3">Gennatio:1200</p>
+                        </li>
+                        <li class="pt-1">
+                          <p class="border-top  ms-3">Febbraio:800</p>
+                        </li>
+                        <li class="pt-1">
+                          <p class="border-top ms-3">Marzo:1500</p>
+                        </li class="pt-1">
+                        <li>
+                          <a href="#" class="border-top pt-2 ms-3 pt-1 ">Visualizza report approfondito</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                
+              </div>
+
+            </div>
+           
+          </div>
+
+          
+
+
         </div>
-    </aside>
+      </div>
 
-   
 
-   
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>  
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
+
